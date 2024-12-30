@@ -1,0 +1,21 @@
+function area(num1, num2){
+    var result = num1 * num2;
+    document.write(result);
+}
+
+function additon(num1, num2){
+    result = num1+num2;
+    document.write(" <br> "+ result);
+}
+
+function subtruction(num1, num2){
+    var num1 = parseInt(prompt("enter 1st number: "));
+    var num2 = parseInt(prompt("enter 2nd number: "));
+    
+    result = num1- num2;
+    document.write("<br>"+ result);
+}
+
+area(4,5);
+additon(10,20);
+subtruction();
