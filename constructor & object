@@ -1,0 +1,25 @@
+console.clear();
+function details(name, age, cgpa, address){
+    this.name = name;
+    this.age = age;
+    this.cgpa = cgpa;
+    this.address = address;
+
+    this.display = function(){
+        console.log("Name ="+this.name);
+        console.log(this.age);
+        console.log(this.cgpa);
+        console.log(this.address);
+    }
+
+}
+
+let student1 = new details("Ashar", 25, 3.45, "Mirpur");
+let student2 = new details("Akash", 24, 3.67, "Uttara");
+let student3 = new details("Moin", 25, 3.85, "Mirpur");
+let student4 = new details("Fahim", 25, 3.4,"Banani");
+
+student1.display();
+student2.display();
+student3.display();
+student4.display();
