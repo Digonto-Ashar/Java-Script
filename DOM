@@ -1,0 +1,38 @@
+//HTML Code
+
+<body>
+
+<a href="#">Website</a>
+
+<div id="my_div" style="background-color: blueviolet;">
+<h1> I am Ashar </h1>
+<h1> I am Digonto </h1>
+
+</div>
+
+<script src="index.js"></script>
+
+</body>
+
+ // JS Code
+
+let h3 = document.createElement("h1");
+let h4 = document.createTextNode("Digonto Ashar");
+
+h3.appendChild(h4);
+
+let div = document.getElementById("my_div");
+div.appendChild(h3);
+
+let h6 = document.getElementsByTagName("h1")[1];
+div.removeChild(h6);
+
+
+let h5 = document.createElement("h1");
+let h7 = document.createTextNode("hello bro");
+h5.appendChild(h7);
+let h8 = document.getElementsByTagName("h1")[0];
+div.insertBefore(h5,h8, );
+
+
+
